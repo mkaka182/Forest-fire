@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker' 
+  args: ['build', '-t', 'gcr.io/beaming-ring-289904/github.com/mkaka182/forest-fire:$SHORTSHA', '.']
+- name: 'gcr.io/cloud-builders/docker' 
+  args: ['push','gcr.io/beaming-ring-289904/github.com/mkaka182/forest-fire:$SHORTSHA']
